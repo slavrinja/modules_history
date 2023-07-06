@@ -1,0 +1,156 @@
+<div id="rec582671414" class="r t-rec" style=" " data-animationappear="off" data-record-type="131"><!-- T123 -->
+    <div class="t123">
+        <div class="t-container_100 ">
+            <div class="t-width t-width_100 ">
+
+                <div class="div_for__bn_widget_fullwidth_page" id="div_for__bn_widget_full">
+                    <div id="absolute_div_for__bn_widget_full">
+                        <div class="left" id="_bn_widget_">
+                            <a href="http://bnovo.ru/" id="_bnovo_link_" target="_blank">Bnovo</a>
+                        </div>
+                    </div>
+                </div>
+                <div style="height: 150px;" class="div_for__bn_widget_fullwidth_page"></div>
+                <div class="div_for__bn_widget_" id="div_for__bn_widget_mobile">
+                    <div id="absolute_div_for__bn_widget_mobile">
+                        <div class="left" id="_bn_widget_mobile_">
+                            <a href="http://bnovo.ru/" id="_bnovo_link_" target="_blank">Bnovo</a>
+                        </div>
+                    </div>
+                </div>
+                <div style="height: 370px;" class="div_for__bn_widget_"></div>
+                <style>
+                    #div_for__bn_widget_full {
+                        width: 100%;
+                        max-width: 1200px;
+                        margin: auto;
+                        margin-top: -12%;
+                    }
+
+                    #absolute_div_for__bn_widget_full {
+                        position: absolute;
+                        width: 100%;
+                        max-width: 1200px;
+                        z-index: 10;
+                    }
+
+                    #div_for__bn_widget_mobile {
+                        width: 100%;
+                        max-width: 640px;
+                        margin: auto;
+                    }
+
+                    #absolute_div_for__bn_widget_mobile {
+                        position: absolute;
+                        width: 100%;
+                        max-width: 640px;
+                        z-index: 10;
+                    }
+
+                    @media (max-width: 1220px) {
+                        #div_for__bn_widget_full, #div_for__bn_widget_full div {
+                            width: calc(100% - 60px);
+                            max-width: 960px !important;
+                        }
+                    }
+
+                    .div_for__bn_widget_ {
+                        display: none;
+                    }
+
+                    @media (max-width: 980px) {
+                        .div_for__bn_widget_fullwidth_page {
+                            display: none;
+                        }
+
+                        .div_for__bn_widget_ {
+                            display: block;
+                        }
+                    }
+
+                    .uc-t795__title .t795__title {
+                        margin-bottom: 0;
+                    }
+                </style>
+                <script src="//widget.reservationsteps.ru/js/bnovo.js"></script>
+                <script type="text/javascript">
+                    (function () {
+                        initBnovoWidget = function () {
+                            const mobileScreen = 980;
+                            const desktopWidgetSelector = '_bn_widget_';
+                            const mobileWidgetSelector = '_bn_widget_mobile_';
+                            if (window.outerWidth > mobileScreen) {
+                                if (!document.querySelector(`#${desktopWidgetSelector} iframe`)) {
+                                    Bnovo_Widget.init(function () {
+                                        Bnovo_Widget.open(desktopWidgetSelector, {
+                                            type: "horizontal",
+                                            uid: "d16e991d-a6cd-4973-a36c-418ad8209fc4",
+                                            lang: "ru",
+                                            width: "100%",
+                                            background: "#ffffff",
+                                            bg_alpha: "0",
+                                            padding: "20",
+                                            border_radius: "0",
+                                            font_type: "inter",
+                                            title_color: "#ffffff",
+                                            title_size: "26",
+                                            inp_color: "#ffffff",
+                                            inp_bordhover: "#f0f0f0",
+                                            inp_bordcolor: "#f0f0f0",
+                                            inp_alpha: "10",
+                                            btn_background: "#0cc9cc",
+                                            btn_background_over: "#0cc9cc",
+                                            btn_textcolor: "#ffffff",
+                                            btn_textover: "#ffffff",
+                                            btn_bordcolor: "#0cc9cc",
+                                            btn_bordhover: "#0cc9cc",
+                                            adults_default: "1",
+                                            url: "https://tochkanemo.ru/booking",
+                                            promo: "on",
+                                            switch_mobiles: "on",
+                                            switch_mobiles_width: "980",
+                                        });
+                                    });
+                                }
+                            } else {
+                                if (!document.querySelector(`#${mobileWidgetSelector} iframe`)) {
+                                    Bnovo_Widget.init(function () {
+                                        Bnovo_Widget.open(mobileWidgetSelector, {
+                                            type: "vertical",
+                                            uid: "d16e991d-a6cd-4973-a36c-418ad8209fc4",
+                                            lang: "ru",
+                                            width: "100%",
+                                            background: "#ffffff",
+                                            bg_alpha: "10",
+                                            padding: "20",
+                                            border_radius: "0",
+                                            font_type: "inter",
+                                            without_title: "on",
+                                            title_color: "#0cc9cc",
+                                            title_size: "30",
+                                            inp_color: "#000000",
+                                            inp_bordhover: "#d4d4d4",
+                                            inp_bordcolor: "#d4d4d4",
+                                            inp_alpha: "100",
+                                            btn_background: "#0cc9cc",
+                                            btn_background_over: "#0cc9cc",
+                                            btn_textcolor: "#ffffff",
+                                            btn_textover: "#ffffff",
+                                            btn_bordcolor: "#0cc9cc",
+                                            btn_bordhover: "#0cc9cc",
+                                            adults_default: "1",
+                                            url: "https://tochkanemo.ru/booking",
+                                            promo: "on"
+                                        });
+                                    });
+                                }
+                            }
+                        }
+                        document.addEventListener('DOMContentLoaded', initBnovoWidget);
+                        window.addEventListener("resize", initBnovoWidget);
+                    })();
+                </script>
+            </div>
+        </div>
+    </div>
+</div>

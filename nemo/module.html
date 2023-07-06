@@ -1,0 +1,104 @@
+<div class="contentWrapper">
+    <div class="content active" id="booking">
+        <div id="booking_iframe" style="padding-bottom: 30px; position: relative;">
+            <div id="bn_iframe"
+                 style="position: absolute; right: 0; margin-top: 10px; font-family: 'Proxima nova', 'Helvetica Neue', 'Cera Pro Medium', Arial, Helvetica, sans-serif; font-size: 12px; line-height: 1em; opacity: .5; z-index: 10; bottom: 0;">
+                <div style="color: #1403fc!important; background: rgba(0, 0, 0, 0)!important;">
+                    <a style="color: #808080!important; background: #fff!important;" href="http://bnovo.ru/" id="bnovo_link" target="_blank">Система управления
+                        отелем Bnovo ©</a>
+                </div>
+            </div>
+        </div>
+        <script src="https://widget.reservationsteps.ru/iframe/library/dist/booking_iframe.js"></script>
+        <script type="text/javascript">
+            var BookingIframe = new BookingIframe({
+                html_id: "booking_iframe",
+                uid: "d16e991d-a6cd-4973-a36c-418ad8209fc4",
+                lang: "ru",
+                width: "auto",
+                height: "auto",
+                rooms: "",
+                IsMobile: "0",
+                scroll_to_rooms: "0",
+                fixed_mobile_header_selector: ".t450__burger_bg.t450__burger_cirqle"
+            });
+            BookingIframe.init();
+        </script>
+    </div>
+    <div class="content" id="service">
+        <div id="booking_iframe_service" style="padding-bottom: 30px; position: relative;">
+            <div id="bn_iframe"
+                 style="position: absolute; right: 0; margin-top: 10px; font-family: 'Proxima nova', 'Helvetica Neue', 'Cera Pro Medium', Arial, Helvetica, sans-serif; font-size: 12px; line-height: 1em; opacity: .5; z-index: 10; bottom: 0;">
+                <div style="color: #1403fc!important; background: rgba(0, 0, 0, 0)!important;">
+                    <a style="color: #808080!important; background: #fff!important;" href="http://bnovo.ru/" id="bnovo_link" target="_blank">Система управления
+                        отелем Bnovo ©</a>
+                </div>
+            </div>
+        </div>
+        <script src="https://widget.reservationsteps.ru/iframe/library/dist/booking_iframe.js"></script>
+        <script type="text/javascript">
+            var BookingIframe = new BookingIframe({
+                html_id: "booking_iframe_service",
+                uid: "d16e991d-a6cd-4973-a36c-418ad8209fc4",
+                lang: "ru",
+                width: "auto",
+                height: "auto",
+                rooms: "",
+                IsMobile: "0",
+                scroll_to_rooms: "0",
+                fixed_mobile_header_selector: ".t450__burger_bg.t450__burger_cirqle",
+                servicemode: "1"
+            });
+            BookingIframe.init();
+        </script>
+    </div>
+</div>
+<style>
+    body > .page {
+        overflow: scroll;
+    }
+
+    .buttonWrapper {
+        width: calc(100% - 6px);
+        font-family: 'StyreneA', Arial, sans-serif;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    div.tab-button {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #000;
+        font-size: 13px;
+        text-transform: uppercase;
+        background: #f0f0f0;
+        border: 1px solid #fff;
+        transition: all .4s;
+        cursor: pointer;
+
+        padding: 14px 0;
+    }
+
+    div.tab-button.active {
+        color: #fff;
+        font-weight: 600;
+        background: #0cc9cc;
+    }
+
+    .content {
+        display: none;
+    }
+
+    .content.active {
+        display: block;
+    }
+
+    @media (max-width: 820px) {
+        .b24-widget-button-position-bottom-right {
+            right: 10px;
+            bottom: 90px;
+        }
+    }
+</style>
